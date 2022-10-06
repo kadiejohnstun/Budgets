@@ -4,7 +4,7 @@ import os
 class Budget(object):
     def __init__(self):
         os.system('cls')
-        self.budget = float(input("How much is your budget?\n"))
+        self.budget = float(input("How much is your budget?\n Budget: $ "))
         self.spending = self.budget * 0.5
         self.main()
 
@@ -12,7 +12,7 @@ class Budget(object):
         os.system('cls')
         print("This calculator follows the 50-20-30 budget rule.\n")
         print("Your total budget is\n$", '{:.2f}'.format(self.budget))
-        main_option = int(input('\nWhat do you want to do?\n1. View over all budget?\n2. View spending budget?\n3. View budget breakdown?\n Option 1, 2, or 3: '))
+        main_option = int(input('\nWhich budget do you want to view?\n 1. View over all budget?\n 2. View spending budget?\n 3. View budget breakdown?\n Option 1, 2, or 3: '))
         if main_option == 1:
             self.overall_budget()
         elif main_option == 2:
@@ -24,7 +24,7 @@ class Budget(object):
     
     def overall_budget(self):
         os.system('cls')
-        option = int(input("How much do you want to invest?\n1. 20%\n2. 30%\nOption 1 or 2: "))
+        option = int(input("How much do you want to invest?\n 1. 20%\n 2. 30%\n Option 1 or 2: "))
         if option == 1:
             self.saving = 0.2
         elif option == 2:
