@@ -4,7 +4,10 @@ import os
 class Budget(object):
     def __init__(self):
         os.system('cls')
-        self.budget = float(input("How much is your budget?\n Budget: $ "))
+        self.budget = float(input("How much is your monthly Gross Pay?\n Budget: $ "))
+        if self.budget <= 10275:
+            self.net = self.budget * (1-0.10)
+        elif self.budget.range()
         self.spending = self.budget * 0.5
         self.main()
 
