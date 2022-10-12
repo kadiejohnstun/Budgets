@@ -22,7 +22,7 @@ import os
 #         elif (self.budget * 12) < limit_3:
 #             self.net = rate_1 * limit_1 + (rate_2 * (limit_2 - limit_1)) + (rate_3 * ((self.budget * 12) - limit_2))
 #         elif (self.budget * 12) < limit_4:
-#             self.net = rate_1 * limit_1 + (rate_2 * (limit_2 - limit_1)) + (rate_3 * (limit_3 - limit_2)) + (rate_4 * ((self.budget * 12) - limit_3))
+#             self.net = rate_1 * limit_1 + (rate_2 * (limit_2 - limit_1)) + (rate_3 * (limitF_3 - limit_2)) + (rate_4 * ((self.budget * 12) - limit_3))
 #         elif (self.budget * 12) < limit_5:
 #             self.net = rate_1 * limit_1 + (rate_2 * (limit_2 - limit_1)) + (rate_3 * (limit_3 - limit_2)) + (rate_4 * (limit_3 - limit_4)) + (rate_5 * ((self.budget * 12) - limit_4))
 #         elif (self.budget * 12) < limit_6:

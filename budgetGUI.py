@@ -39,6 +39,8 @@ class MainWindow:
         self.rentEntry = tk.Entry(self.popUp, width=25)
         self.billsLabel = tk.Label(self.popUp, text="Total Monthly Expenditures:")
         self.billsEntry = tk.Entry(self.popUp, width=25)
+        # self.savingsLabel = tk.Label(self.popUp, text="How much will you Save:")
+        # self.savingsEntry = tk.Entry(self.popUp, width=25)
         self.done = tk.Button(self.popUp, text='Done', command=self.calculateSpending)
         items = [self.rentLabel, self.rentEntry, self.billsLabel, self.billsEntry, self.done]
         for item in items: item.pack(pady=5)
