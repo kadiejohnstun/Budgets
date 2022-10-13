@@ -3,7 +3,7 @@ import tkinter as tk
 class MainWindow:
     def __init__(self):
         self.root = tk.Tk()
-        self.root.geometry('920x540')
+        self.root.geometry('1000x600')
         self.root.resizable(width=False, height=False)
         self.root.title('Automated Budgeting Tool')
         self.style = ('Helvetica', 18)
@@ -32,7 +32,7 @@ class MainWindow:
 
     def popUp(self):
         self.popUp = tk.Tk()
-        self.popUp.geometry("200x200")
+        self.popUp.geometry("220x190")
         self.popUp.title("Bills")
         self.popUp.resizable(width=False, height=False)
         self.rentLabel = tk.Label(self.popUp, text="Mortgage/Rent:")
@@ -63,7 +63,7 @@ class MainWindow:
         self.popUp.destroy()
         self.budget = float(self.entry.get() or 0)
         self.food = (self.budget * 0.5) - self.rent - self.bills
-        self.draw(f" **- Total Budget -** \n Total\t\t: ${'{:.2f}'.format(self.budget)}\n Spending Budget\t\t: ${'{:.2f}'.format(self.budget*0.5)}\n\n **- Expenditures -** \n Mortage/Rent\t\t: ${'{:.2f}'.format(self.rent)}\n Bills\t\t: ${'{:.2f}'.format(self.bills)}\n Food\t\t: ${'{:.2f}'.format(self.food)}")
+        self.draw(f"       **- Total Budget -** \n Total\t\t: ${'{:.2f}'.format(self.budget)}\n Spending Budget\t\t: ${'{:.2f}'.format(self.budget*0.5)}\n\n       **- Expenditures -** \n Mortage/Rent\t\t: ${'{:.2f}'.format(self.rent)}\n Bills\t\t: ${'{:.2f}'.format(self.bills)}\n Food\t\t: ${'{:.2f}'.format(self.food)}")
 
 if __name__ == '__main__':
     MainWindow()
